@@ -1,0 +1,289 @@
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#E0EAFC,#E8DBFC);
+     overflow: hidden;
+}
+ 
+.box{
+    width: 800px;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    position: relative;
+     overflow: hidden;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "B Koodak";
+    direction: rtl;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.box .container{
+    position: relative;
+    z-index: 2;
+    width: 380px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.45);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 25px 45px rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 40px;
+    z-index: 10;
+    transition: 0.5s;
+}
+
+.box .container:hover{
+    transform: translateY(-10px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    
+}
+.box .container .card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.box .container .card .profile{
+    position: relative;
+    width: 90px;
+    height: 90px;
+    margin-bottom: 12px;
+}
+.box .container .on {
+  position: absolute;
+    bottom: 4px;
+    right: 4px;
+    width: 14px;
+    height: 14px;
+    background-color: #22C55E;
+    border: 2.5px solid #fff;
+    border-radius: 50%;
+
+}
+.box .container .avatar{
+   width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+}
+.skills{
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+ .skills-tittle {
+    font-size: 18px;
+    color: #595959;
+     margin-bottom: 10px;
+ }
+ .skills_wrapper{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.skill-tag{
+    padding: 8px 14px;
+    border-radius:100px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.skill-tag.html { background-color: rgba(255, 127, 80, 0.12);  }
+.skill-tag.css { background-color: rgba(52, 152, 219, 0.12);  }
+.skill-tag.js { background-color: rgba(241, 196, 15, 0.12);  }
+.skill-tag.ui { background-color: rgba(155, 89, 182, 0.12); }
+.skill-tag.html:hover { background-color:  #d46317; }
+.skill-tag.css:hover { background-color: #388fc9; }
+.skill-tag.js:hover { background-color:  #b79c30; }
+.skill-tag.ui:hover { background-color:  #9e55bd; }
+.state{
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+ .state-tittle {
+    font-size: 18px;
+    color: #595959;
+     margin-bottom: 10px;
+}
+.state_wrapper{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.state-box{
+    flex:1;
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    justify-content: center;
+    flex-direction: column;
+    padding: 14px 18px;
+    border-radius:10%;
+    font-size: 11px;
+    font-weight: 600;
+    gap: 4px;
+}
+.state-box:hover{
+    border-color: #79abfd;
+    box-shadow: 0 2px 5px #79abfd;
+}
+.social{
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+ .social-tittle {
+    font-size: 18px;
+    color: #595959;
+     margin-bottom: 10px;
+}
+.social_wrapper{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.social-box{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius:50%;
+    
+}
+.social-box:nth-child(1):hover{
+   border:2px solid #db6eff;
+    box-shadow: 0 2px 5px #db6eff;
+}
+.social-box:nth-child(2):hover{
+    border:2px solid #79abfd;
+    box-shadow: 0 2px 5px #79abfd;
+}
+.social-box:nth-child(3):hover{
+   border:2px solid #ffffff;
+    box-shadow: 0 2px 5px #767575;
+}
+.main-btn {
+    width: 100%;
+    padding: 14px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 16px;
+    background: linear-gradient(90deg, #4FACFE, #7F56D9);
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(127, 86, 217, 0.2);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.main-btn:hover {
+    background: linear-gradient(90deg, #3B82F6, #6366F1);
+    box-shadow: 0 8px 24px rgba(99, 102, 241, 0.45);
+}
+.box .anim{
+    position: absolute;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(255, 255, 255, 0.1);
+    z-index: 0;
+    animation: animate 10s infinite;
+    animation-delay: calc(-1s * var(--i));
+}
+.box .anim:nth-child(1){
+    background-color:rgba(162, 194, 246, 0.6);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+    top: -40px;
+    right: -120px;
+     z-index: 0;
+}
+.box .anim:nth-child(2){
+    background:linear-gradient(120deg ,rgba(165, 180, 252, 0.4),rgba(192, 132, 252, 0.4));
+    border: 1px solid rgb(255, 255, 255);
+    filter: blur(0.4px);
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    top: 20px;
+    right: 490px;
+}
+.box .anim:nth-child(3){
+    
+    border: 1px solid rgba(144, 34, 254, 0.4);
+    filter: blur(0.4px);
+    border-radius: 50px;
+    width: 20px;
+    height: 20px;
+    top: 310px;
+    right: 490px;
+}
+.box .anim:nth-child(4){
+    background-color:rgba(162, 194, 246, 0.6);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50px;
+    width: 80px;
+    height: 80px;
+    top: 400px;
+    right: 420px;
+}
+.box .anim:nth-child(5){
+    background:linear-gradient(120deg ,rgba(165, 180, 252, 0.4),rgba(192, 132, 252, 0.4));
+    border: 1px solid rgb(255, 255, 255);
+    filter: blur(0.4px);
+    border-radius: 50px;
+    width: 20px;
+    height: 20px;
+    top: 400px;
+    right: -120px;
+}
+.box .anim:nth-child(6){
+    background:linear-gradient(120deg ,rgba(255, 255, 255, 0.4) 30%,rgba(165, 180, 252, 0.4),rgba(192, 132, 252, 0.4));
+    filter: blur(0.4px);
+    border-radius: 50px;
+    width:40px;
+    height:40px;
+    top: 90px;
+    right: -150px;
+}
+@keyframes animate{
+    0%,100%{
+transform: translateY(-20px);
+
+    }
+    50%{
+transform: translateY(20px);
+    }
+}
